@@ -6,4 +6,4 @@ Multiplataforma.
 ## Acceso a los proyectos
 
 - [Primera app](./primeraapp/)
-- [Juego de parejas y trillero](./JocParreles_Triller/)
+- [Juego de parejas y trillero](./JocParelles_Triller/)
