@@ -1,6 +1,5 @@
 package org.proven.rutesdeviatge.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,32 +11,54 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = OceanGreenLight,
+    onPrimary = ColorOnPrimaryDark,
+    primaryContainer = OceanGreen,
+    onPrimaryContainer = OceanGreenContainer,
+    secondary = SeaGreyLight,
+    onSecondary = SeaGrey,
+    secondaryContainer = SeaGrey,
+    onSecondaryContainer = SeaGreyContainer,
+    tertiary = HorizonBlueLight,
+    onTertiary = HorizonBlue,
+    tertiaryContainer = HorizonBlue,
+    onTertiaryContainer = HorizonBlueContainer,
+    background = DarkBackground,
+    onBackground = DarkOnSurface,
+    surface = DarkSurface,
+    onSurface = DarkOnSurface,
+    surfaceVariant = DarkSurfaceVariant,
+    onSurfaceVariant = DarkOnSurfaceVariant,
+    outline = DarkOutline
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = OceanGreen,
+    onPrimary = ColorOnPrimaryLight,
+    primaryContainer = OceanGreenContainer,
+    onPrimaryContainer = OnOceanGreenContainer,
+    secondary = SeaGrey,
+    onSecondary = ColorOnPrimaryLight,
+    secondaryContainer = SeaGreyContainer,
+    onSecondaryContainer = OnSeaGreyContainer,
+    tertiary = HorizonBlue,
+    onTertiary = ColorOnPrimaryLight,
+    tertiaryContainer = HorizonBlueContainer,
+    onTertiaryContainer = OnHorizonBlueContainer,
+    background = LightBackground,
+    onBackground = LightOnSurface,
+    surface = LightBackground,
+    onSurface = LightOnSurface,
+    surfaceVariant = LightSurfaceVariant,
+    onSurfaceVariant = LightOnSurfaceVariant,
+    outline = LightOutline
 )
 
 @Composable
 fun RutesDeViatgeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // Desactivem el color dinàmic per mantenir la paleta pròpia de l'app.
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

@@ -7,3 +7,4 @@ Multiplataforma.
 
 - [Primera app](./primeraapp/)
 - [Juego de parejas y trillero](./JocParelles_Triller/)
+- [Rutes de viatge](./RutesDeViatge/)
