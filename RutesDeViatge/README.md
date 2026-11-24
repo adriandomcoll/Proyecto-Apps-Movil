@@ -2,6 +2,12 @@
 
 Aplicació Android desenvolupada amb **Kotlin**, **Jetpack Compose** i arquitectura **MVVM** per registrar rutes i escapades, generar una postal visual de cada viatge i guardar l'històric de forma persistent.
 
+
+---
+
+## Com he fet el proyecte
+Per aquest proyecte he utilitzat l'OpenCode amb el model gratuit de DeepSeek, al acabar-se he anat al Copilot education i de vegades he anat al agent integrat del Android Studio per algunes consultes.
+
 ---
 
 ## Funcionalitats
