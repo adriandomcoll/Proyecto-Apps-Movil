@@ -2,8 +2,6 @@
 
 Aplicació Android desenvolupada amb **Kotlin**, **Jetpack Compose** i arquitectura **MVVM** per registrar rutes i escapades, generar una postal visual de cada viatge i guardar l'històric de forma persistent.
 
-Projecte de **DAM2 · Programació de Mòbils**.
-
 ---
 
 ## Funcionalitats
@@ -217,32 +215,3 @@ app/build/outputs/apk/debug/app-debug.apk
 - Tancament i reobertura de l'app per comprovar que l'històric es recupera del JSON.
 - Exportació d'una crònica des del selector de fitxers del sistema.
 - Compartició del text amb el selector d'apps d'Android.
-
----
-
-## Repositori de GitHub
-
-Nom proposat: **Android-DiariViatges-Storage**.
-
-Per pujar el projecte:
-
-```bash
-git init
-git add .
-git commit -m "Projecte Rutes de Viatge amb MVVM, storage intern i exportació SAF"
-git branch -M main
-git remote add origin https://github.com/USUARI/Android-DiariViatges-Storage.git
-git push -u origin main
-```
-
-> Recorda crear abans el repositori **públic** a GitHub i substituir `USUARI` pel teu nom d'usuari.
-
----
-
-## Possibles millores
-
-- Editar i eliminar rutes de l'històric.
-- Guardar una foto del lloc visitat.
-- Migrar l'emmagatzematge a Room.
-- Afegir tests unitaris del ViewModel i de la validació.
-- Traduir la interfície a diversos idiomes amb `strings.xml`.
